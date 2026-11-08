@@ -14,6 +14,8 @@ intent-ui/
 │       ├── agents/
 │       │   └── openai.yaml      显示名称与默认调用提示
 │       └── references/          流程、方法、业务、组件、验收规则和来源资料
+│           ├── tool-interface-style.md    工作台、控制台及配套展示面的风格规则
+│           └── tool-interface-sources.md  NextLabs、LarkAgentX 案例与核验边界
 └── artifacts/                   临时产物区，不属于 Skill
 ```
 

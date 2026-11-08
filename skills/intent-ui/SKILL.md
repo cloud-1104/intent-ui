@@ -1,6 +1,6 @@
 ---
 name: intent-ui
-description: "为后台管理系统编排设计工作流程并制定或审查业务与组件交互规范：按理解、定义、方案、验证组织设计过程与交付物链，约束 AI 生成界面的方法与自检；参考 Cloudscape 判断功能取舍，综合 WAI-ARIA APG、Carbon、Ant Design、Radix 与 React Aria 规定组件选型、状态、键盘、焦点和反馈；提供启发式评估、认知走查、WCAG 2.2 AA 验收与设计系统令牌规范。适用于后台需求设计、设计流程规划、功能查漏、组件行为设计、AI 生成界面约束、交互评审与验收、设计系统规范制定。纯视觉美化、营销站或后端接口设计不单独触发。"
+description: "为后台管理系统编排设计工作流程并制定或审查业务与组件交互规范。按理解、定义、方案、验证组织交付物与 AI 自检，参考 Cloudscape 判断功能取舍，综合 WAI-ARIA APG、Carbon、Ant Design、Radix 与 React Aria 规定组件行为，并提供设计评估、WCAG 2.2 AA 验收与设计系统令牌规范。适用于后台需求设计、流程规划、功能查漏、组件行为设计、AI 生成界面约束、交互评审与验收、设计系统规范制定，以及提炼或应用工作台、控制台参考风格（含 NextLabs、LarkAgentX 案例）。纯视觉美化、营销站或后端接口设计不单独触发。"
 ---
 
 # 知行交互规范 Intent UI
@@ -27,6 +27,7 @@ description: "为后台管理系统编排设计工作流程并制定或审查业
 | 设计具体模块 | 从已知流程和数据状态推导必要能力 | 模块决策表、页面交互契约、验收场景 |
 | 设计或审查后台组件行为 | 明确组件语义、状态、输入方式和组合边界 | 组件选择理由、行为契约、必要的交互验收 |
 | 审查现有后台 | 对照可见页面、需求或源码识别缺口 | 有证据的问题、影响、最小修正及验收 |
+| 提炼或应用后台参考风格 | 对照页面与源码，按任务选择构图、令牌角色和交互模式 | 可执行的风格约定、适配边界、验收点 |
 | 实现或修复交互 | 在已有架构中实现已确定的范围 | 代码变更、相应验证、剩余依赖 |
 
 规范请求不自动扩展成代码改造；评审请求不自动重构整个后台。简单页面只输出必要的决策与规则。
@@ -73,10 +74,12 @@ description: "为后台管理系统编排设计工作流程并制定或审查业
 | 组件选型、状态语言、键盘、焦点、浮层及组件组合 | [组件交互设计语言](references/component-interaction-language.md) |
 | 启发式评估、认知走查、无障碍验收、体验度量、设计 QA | [设计评估方法](references/design-evaluation.md) |
 | 设计系统治理、design token、组件文档模板、一致性审计 | [设计系统与令牌规范](references/design-system-spec.md) |
+| 提炼或应用 NextLabs、LarkAgentX 等参考风格，高频工作台、运营控制台及配套展示面 | [工具型界面风格](references/tool-interface-style.md) |
 | 输出规范、评审报告、验收、场景演练 | [交付与检查](references/delivery-and-review.md) |
 | 引用 Cloudscape 业务模式 | [Cloudscape 来源与适配边界](references/cloudscape-sources.md) |
 | 引用 APG、Carbon、Ant Design、Radix 或 React Aria 的组件规则 | [组件来源与差异处理](references/component-sources.md) |
 | 引用流程模型、评估方法或设计系统来源 | [流程、评估与设计系统来源](references/process-sources.md) |
+| 引用 NextLabs、LarkAgentX 的案例证据与核验边界 | [工具型界面风格来源](references/tool-interface-sources.md) |
 
 每个实际提供的操作写清：入口和作用对象 → 适用状态与权限 → 输入或确认 → 执行中 → 成功结果 → 失败或结果未知 → 返回位置和恢复途径。不适用环节可以省略并说明；不为浏览详情强加确认框。
 
