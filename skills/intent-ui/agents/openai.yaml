@@ -1,0 +1,4 @@
+interface:
+  display_name: "知行交互规范 · Intent UI"
+  short_description: "编排标准设计工作流程与 AI 设计方法，按业务场景判断后台功能取舍，统一组件状态、键盘焦点、反馈、评估与验收规范"
+  default_prompt: "使用 $intent-ui 规划这个后台的设计流程与功能取舍，给出交付物链、组件状态与键盘焦点规则，以及可验收的改进方案。"
